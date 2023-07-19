@@ -1,12 +1,14 @@
 
 import './App.css';
-import {ChakraProvider} from '@chakra-ui/react'
+import {ChakraProvider, Box} from '@chakra-ui/react'
 import Navbar from './components/navbar';
+import SearchBox from './components/navbar/searchBox';
 
 function App() {
   return (
     <ChakraProvider>
-     <Navbar />
+      <Navbar />
+      {/* <SearchBox /> */}
     </ChakraProvider>
   );
 }
