@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/electbox/static/css/main.073c9b0a.css",
-    "main.js": "/electbox/static/js/main.f072fd4a.js",
+    "main.js": "/electbox/static/js/main.bbd651a8.js",
     "static/js/787.390e0778.chunk.js": "/electbox/static/js/787.390e0778.chunk.js",
     "index.html": "/electbox/index.html",
     "main.073c9b0a.css.map": "/electbox/static/css/main.073c9b0a.css.map",
-    "main.f072fd4a.js.map": "/electbox/static/js/main.f072fd4a.js.map",
+    "main.bbd651a8.js.map": "/electbox/static/js/main.bbd651a8.js.map",
     "787.390e0778.chunk.js.map": "/electbox/static/js/787.390e0778.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.f072fd4a.js"
+    "static/js/main.bbd651a8.js"
   ]
 }
