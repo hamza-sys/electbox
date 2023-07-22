@@ -1,15 +1,32 @@
 {
   "files": {
-    "main.css": "/electbox/static/css/main.073c9b0a.css",
-    "main.js": "/electbox/static/js/main.bbd651a8.js",
+    "main.css": "/electbox/static/css/main.607759b6.css",
+    "main.js": "/electbox/static/js/main.c3876ecc.js",
     "static/js/787.390e0778.chunk.js": "/electbox/static/js/787.390e0778.chunk.js",
+    "static/media/pp1.webp": "/electbox/static/media/pp1.fd19113af06669771715.webp",
+    "static/media/slide-2.webp": "/electbox/static/media/slide-2.7b12c1d9e22a483f78e7.webp",
+    "static/media/pp7.webp": "/electbox/static/media/pp7.87054c4bee3b915ed472.webp",
+    "static/media/slide-1.webp": "/electbox/static/media/slide-1.fd806c69008f39dd103f.webp",
+    "static/media/pp10.webp": "/electbox/static/media/pp10.16a93441e1f737ff12cf.webp",
+    "static/media/pp4.webp": "/electbox/static/media/pp4.11e9154d1bf6f2968ffc.webp",
+    "static/media/pp6.webp": "/electbox/static/media/pp6.675a4720222a993e4e32.webp",
+    "static/media/pp8.webp": "/electbox/static/media/pp8.fb9e2785ae179d445b36.webp",
+    "static/media/pp9.webp": "/electbox/static/media/pp9.03029ae85e87808d3226.webp",
+    "static/media/pp2.webp": "/electbox/static/media/pp2.517637afd2d02a4fbb80.webp",
+    "static/media/pp5.webp": "/electbox/static/media/pp5.8fc4362321a8d3d7a7f6.webp",
+    "static/media/pp3.webp": "/electbox/static/media/pp3.e554e28506f5fa453f3f.webp",
+    "static/media/revicons.eot": "/electbox/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/electbox/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/sale-1.webp": "/electbox/static/media/sale-1.e0c59d3a0baed45441f8.webp",
+    "static/media/revicons.woff": "/electbox/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/sale-2.webp": "/electbox/static/media/sale-2.fc22ea2c0300745b3d30.webp",
     "index.html": "/electbox/index.html",
-    "main.073c9b0a.css.map": "/electbox/static/css/main.073c9b0a.css.map",
-    "main.bbd651a8.js.map": "/electbox/static/js/main.bbd651a8.js.map",
+    "main.607759b6.css.map": "/electbox/static/css/main.607759b6.css.map",
+    "main.c3876ecc.js.map": "/electbox/static/js/main.c3876ecc.js.map",
     "787.390e0778.chunk.js.map": "/electbox/static/js/787.390e0778.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.bbd651a8.js"
+    "static/css/main.607759b6.css",
+    "static/js/main.c3876ecc.js"
   ]
 }
