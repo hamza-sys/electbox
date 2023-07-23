@@ -1,4 +1,15 @@
-import { Box, Button, Flex, Image, List } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Heading,
+  IconButton,
+  Image,
+  List,
+  Slide,
+  Text,
+  useDisclosure,
+} from "@chakra-ui/react";
 import React, { useRef, useState } from "react";
 
 import { useMediaQuery } from "@chakra-ui/react";
@@ -6,15 +17,16 @@ import { useMediaQuery } from "@chakra-ui/react";
 import CategoryList from "./category_list";
 import PagesLinks from "./PagesLinks";
 
-import slide1 from "../../images/slide-1.webp";
-import slide2 from "../../images/slide-2.webp";
-
 import sale1 from "../../images/sale-1.webp";
 import sale2 from "../../images/sale-2.webp";
 
 import CategoryItem from "./category_list/CategoryItem";
 import Sale from "./Sale";
 import PopularItems from "./popular_items";
+import Carousel from "react-multi-carousel";
+import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
+
+import SliderCarousel from "./slider";
 
 const Main = () => {
   const [isMax680, isMax740, isMax1320] = useMediaQuery([
@@ -22,6 +34,7 @@ const Main = () => {
     "(max-width: 740px)",
     "(max-width: 1320px)",
   ]);
+
 
   return (
     <Box w="100%" bg="#f5f5f5">
@@ -55,12 +68,13 @@ const Main = () => {
               )}
             </Box>
 
+            {/* Carousel Section */}
             <Box
               px="10px"
               w={isMax740 ? "97%" : isMax1320 ? "90%" : "95%"}
               position="relative"
             >
-              <Image w="100%" src={slide1} />
+            <SliderCarousel />
             </Box>
 
             {/* sales section */}
@@ -70,32 +84,26 @@ const Main = () => {
                 gap="20px"
                 direction={isMax680 ? "column" : "row"}
               >
-                <Sale
-                  offTextPercentage="30%"
-                  productName="Prolet Desgined for Airpods"
-                  imgSrc={sale1}
-                  w={isMax680 ? "100%" : "50%"}
-                />
-                <Sale
-                  offTextPercentage="30%"
-                  productName="EasySkinz XBOX Series X"
-                  imgSrc={sale2}
-                  w={isMax680 ? "100%" : "50%"}
-                  color="white"
-                />
+                  <Sale
+                    offTextPercentage="30%"
+                    productName="Prolet Desgined for Airpods"
+                    imgSrc={sale1}
+                    w={isMax680 ? "100%" : "50%"}
+                  />
+                  <Sale
+                    offTextPercentage="30%"
+                    productName="EasySkinz XBOX Series X"
+                    imgSrc={sale2}
+                    w={isMax680 ? "100%" : "50%"}
+                    color="white"
+                  />
               </Flex>
             </Box>
 
             {/* Popular Products */}
-            <Box
-              px="10px"
-              w={isMax740 ? "97%" : isMax1320 ? "90%" : "95%"}
-            >
+            <Box px="10px" w={isMax740 ? "97%" : isMax1320 ? "90%" : "95%"}>
               <PopularItems />
             </Box>
-
-
-
           </Flex>
         </Box>
       </Flex>

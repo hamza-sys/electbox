@@ -5,12 +5,16 @@ import {
   Image,
   Text,
   textDecoration,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import React from "react";
 
 import { BsStar } from "react-icons/bs";
 
 const PopularItem = ({ offPercentage, img, name, price, prevPrice }) => {
+
+    const [isMax430] = useMediaQuery(['(max-width: 430px)'])
+
   return (
     <Box
       mr="10px"
@@ -37,18 +41,19 @@ const PopularItem = ({ offPercentage, img, name, price, prevPrice }) => {
               <BsStar />
             ))}
           </Flex>
-                  <Text textOverflow='ellipsis' fontSize="sm">{name}</Text>
+          <Text textOverflow='ellipsis' fontSize="sm">{isMax430 ? limitString(name, 27) + '...' : limitString(name, 22)}</Text>
           <Text>
                       <span style={{ fontWeight: "bold" }}>{`$${price}.00`}</span>{" "}
             {prevPrice && (
               <span
                 style={{
                   fontWeight: "thin",
+                  fontSize: '13px',
                   textDecoration: "line-through",
                   color: "gray",
                 }}
               >
-                $19.00
+                {`$${prevPrice}.00`}
               </span>
             )}
           </Text>
@@ -61,5 +66,9 @@ const PopularItem = ({ offPercentage, img, name, price, prevPrice }) => {
     </Box>
   );
 };
+
+function limitString(str, maxlength) {
+    return str.substring(0, maxlength)
+}
 
 export default PopularItem;

@@ -4,7 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 import { Box, Button, Flex, IconButton, Text } from "@chakra-ui/react";
-import {ChevronLeftIcon, ChevronRightIcon} from '@chakra-ui/icons'
+import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
 import pp1 from "../../../images/pp1.webp";
 import pp2 from "../../../images/pp2.webp";
@@ -36,13 +36,13 @@ const popular_products = [
   {
     offPercentage: 25,
     img: pp3,
-    name: "New Apple Iphone 12 pro Max gold",
+    name: "New Apple Iphone 12 pro Max gold Edition",
     price: 9,
     prevPrice: 12,
   },
   {
     img: pp4,
-    name: "French connection new smartWatch",
+    name: "French connection new Fancy smartWatch",
     price: 240,
   },
   {
@@ -94,11 +94,11 @@ const responsive = {
     items: 5,
   },
   desktop: {
-    breakpoint: { max: 1020, min: 820 },
+    breakpoint: { max: 1140, min: 900 },
     items: 4,
   },
   tablet: {
-    breakpoint: { max: 820, min: 530 },
+    breakpoint: { max: 900, min: 530 },
     items: 3,
   },
   mobile: {
@@ -117,21 +117,36 @@ const PopularItems = () => {
       const { currentSlide, slidesToShow, totalItems } =
         carouselRef.current.state;
 
-      setIsFirstSlide(currentSlide === 0)
+      setIsFirstSlide(currentSlide === 0);
       const lastVisibleItemIndex = currentSlide + slidesToShow;
-      
 
       setLastIsSlide(lastVisibleItemIndex >= totalItems);
     }
   };
 
   return (
-    <Box mt={{base: 3, md: 5}}>
-      <Flex mb={{base: 1, md: 3}} justify='space-between'>
-        <Text fontSize={{base: 'xl', md: '2xl'}} fontWeight='600'>Popular Products</Text>
+    <Box mt={{ base: 3, md: 5 }}>
+      <Flex mb={{ base: 1, md: 3 }} justify="space-between">
+        <Text fontSize={{ base: "xl", md: "2xl" }} fontWeight="600">
+          Popular Products
+        </Text>
         <Box>
-          <IconButton onClick={() => carouselRef.current.previous()} isDisabled={isFirstSlide} transition='all .3s ease' background='none' _hover={{color: '#fdda06'}} icon={<ChevronLeftIcon boxSize={7} />} />
-          <IconButton onClick={() => carouselRef.current.next()} isDisabled={isLastSlide} transition='all .3s ease' background='none' _hover={{color: '#fdda06'}} icon={<ChevronRightIcon boxSize={7} />} />
+          <IconButton
+            onClick={() => carouselRef.current.previous()}
+            isDisabled={isFirstSlide}
+            transition="all .3s ease"
+            background="none"
+            _hover={{ color: "#fdda06" }}
+            icon={<ChevronLeftIcon boxSize={7} />}
+          />
+          <IconButton
+            onClick={() => carouselRef.current.next()}
+            isDisabled={isLastSlide}
+            transition="all .3s ease"
+            background="none"
+            _hover={{ color: "#fdda06" }}
+            icon={<ChevronRightIcon boxSize={7} />}
+          />
         </Box>
       </Flex>
       <Carousel
