@@ -35,7 +35,6 @@ const Main = () => {
     "(max-width: 1320px)",
   ]);
 
-
   return (
     <Box w="100%" bg="#f5f5f5">
       <Flex direction={isMax1320 ? "column-reverse" : "row"}>
@@ -74,7 +73,7 @@ const Main = () => {
               w={isMax740 ? "97%" : isMax1320 ? "90%" : "95%"}
               position="relative"
             >
-            <SliderCarousel />
+              <SliderCarousel />
             </Box>
 
             {/* sales section */}
@@ -84,19 +83,19 @@ const Main = () => {
                 gap="20px"
                 direction={isMax680 ? "column" : "row"}
               >
-                  <Sale
-                    offTextPercentage="30%"
-                    productName="Prolet Desgined for Airpods"
-                    imgSrc={sale1}
-                    w={isMax680 ? "100%" : "50%"}
-                  />
-                  <Sale
-                    offTextPercentage="30%"
-                    productName="EasySkinz XBOX Series X"
-                    imgSrc={sale2}
-                    w={isMax680 ? "100%" : "50%"}
-                    color="white"
-                  />
+                <Sale
+                  offTextPercentage="30%"
+                  productName="Prolet Desgined for Airpods"
+                  imgSrc={sale1}
+                  w={isMax680 ? "100%" : "50%"}
+                />
+                <Sale
+                  offTextPercentage="30%"
+                  productName="EasySkinz XBOX Series X"
+                  imgSrc={sale2}
+                  w={isMax680 ? "100%" : "50%"}
+                  color="white"
+                />
               </Flex>
             </Box>
 

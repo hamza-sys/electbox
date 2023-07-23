@@ -12,8 +12,7 @@ import React from "react";
 import { BsStar } from "react-icons/bs";
 
 const PopularItem = ({ offPercentage, img, name, price, prevPrice }) => {
-
-    const [isMax430] = useMediaQuery(['(max-width: 430px)'])
+  const [isMax430] = useMediaQuery(["(max-width: 430px)"]);
 
   return (
     <Box
@@ -21,7 +20,7 @@ const PopularItem = ({ offPercentage, img, name, price, prevPrice }) => {
       borderRadius="4px"
       bg="white"
       px="10px"
-          mb="10px"
+      mb="10px"
       _hover={{ cursor: "pointer" }}
     >
       <Box position="relative">
@@ -41,14 +40,16 @@ const PopularItem = ({ offPercentage, img, name, price, prevPrice }) => {
               <BsStar />
             ))}
           </Flex>
-          <Text textOverflow='ellipsis' fontSize="sm">{isMax430 ? limitString(name, 27) + '...' : limitString(name, 22)}</Text>
+          <Text textOverflow="ellipsis" fontSize="sm">
+            {isMax430 ? limitString(name, 27) + "..." : limitString(name, 22)}
+          </Text>
           <Text>
-                      <span style={{ fontWeight: "bold" }}>{`$${price}.00`}</span>{" "}
+            <span style={{ fontWeight: "bold" }}>{`$${price}.00`}</span>{" "}
             {prevPrice && (
               <span
                 style={{
                   fontWeight: "thin",
-                  fontSize: '13px',
+                  fontSize: "13px",
                   textDecoration: "line-through",
                   color: "gray",
                 }}
@@ -68,7 +69,7 @@ const PopularItem = ({ offPercentage, img, name, price, prevPrice }) => {
 };
 
 function limitString(str, maxlength) {
-    return str.substring(0, maxlength)
+  return str.substring(0, maxlength);
 }
 
 export default PopularItem;

@@ -1,22 +1,22 @@
-import React from 'react'
+import React from "react";
 
 import slide1 from "../../../images/slide-1.webp";
 import slide2 from "../../../images/slide-2.webp";
-import Slider from './Slider';
-import Carousel from 'react-multi-carousel';
+import Slider from "./Slider";
+import Carousel from "react-multi-carousel";
 
 const slides = [
-    {
-        name: `Playing Video <br /> Game`,
-        offPerc: 40,
-        imgSrc: slide1,
-    },
-    {
-        name: `New Wireless <br />Speaker`,
-        offPerc: 50,
-        imgSrc: slide2,
-    }
-]
+  {
+    name: `Playing Video <br /> Game`,
+    offPerc: 40,
+    imgSrc: slide1,
+  },
+  {
+    name: `New Wireless <br />Speaker`,
+    offPerc: 50,
+    imgSrc: slide2,
+  },
+];
 
 const responsive = {
   superLargeDesktop: {
@@ -50,26 +50,25 @@ function CustomDot({ onClick, active }) {
   return <span onClick={onClick} style={dotStyle} />;
 }
 
-
-
-
 const SliderCarousel = () => {
   return (
-      <Carousel
-                responsive={responsive}
-                infinite={true}
-                arrows={false}
-                showDots={true}
-                autoPlay={true}
-                customDot={<CustomDot />}
-              >
-               
-          {slides.map((slide, index) => (
-          <Slider imgSrc={slide.imgSrc} name={slide.name} offPercentage={slide.offPerc} />
-                ))}
-        </Carousel>
-    )
-}
+    <Carousel
+      responsive={responsive}
+      infinite={true}
+      arrows={false}
+      showDots={true}
+      autoPlay={true}
+      customDot={<CustomDot />}
+    >
+      {slides.map((slide, index) => (
+        <Slider
+          imgSrc={slide.imgSrc}
+          name={slide.name}
+          offPercentage={slide.offPerc}
+        />
+      ))}
+    </Carousel>
+  );
+};
 
-
-export default SliderCarousel
+export default SliderCarousel;
