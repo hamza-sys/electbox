@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/electbox/static/css/main.607759b6.css",
-    "main.js": "/electbox/static/js/main.c3876ecc.js",
+    "main.js": "/electbox/static/js/main.61bb67ca.js",
     "static/js/787.390e0778.chunk.js": "/electbox/static/js/787.390e0778.chunk.js",
     "static/media/pp1.webp": "/electbox/static/media/pp1.fd19113af06669771715.webp",
     "static/media/slide-2.webp": "/electbox/static/media/slide-2.7b12c1d9e22a483f78e7.webp",
@@ -22,11 +22,11 @@
     "static/media/sale-2.webp": "/electbox/static/media/sale-2.fc22ea2c0300745b3d30.webp",
     "index.html": "/electbox/index.html",
     "main.607759b6.css.map": "/electbox/static/css/main.607759b6.css.map",
-    "main.c3876ecc.js.map": "/electbox/static/js/main.c3876ecc.js.map",
+    "main.61bb67ca.js.map": "/electbox/static/js/main.61bb67ca.js.map",
     "787.390e0778.chunk.js.map": "/electbox/static/js/787.390e0778.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.607759b6.css",
-    "static/js/main.c3876ecc.js"
+    "static/js/main.61bb67ca.js"
   ]
 }
